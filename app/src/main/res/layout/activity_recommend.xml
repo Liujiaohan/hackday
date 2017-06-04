@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_recommend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="80dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="90dp"
+    android:background="@mipmap/background"
+    tools:context="com.hackday.anonymousmeet.Activity.Main3Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recommend"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:height="140dp"
+        android:id="@+id/content_r"
+        android:textColor="#000000"
+        android:background="@drawable/background"
+        android:textSize="20sp"
+        android:text="   "
+        />
+    <View
+        android:layout_width="match_parent"
+        android:background="@android:drawable/divider_horizontal_bright"
+        android:layout_height="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="26sp"
+            android:text="评论"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:background="@mipmap/star"/>
+        <TextView
+            android:layout_alignParentRight="true"
+            tools:text="123"
+            android:layout_marginRight="20dp"
+            android:textSize="20sp"
+            android:id="@+id/likeamount_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/comments_r"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp">
+        <EditText
+            android:background="@drawable/background2"
+            android:layout_width="190dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="16sp"
+            android:id="@+id/edit_text_r"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/send_r"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:background="@mipmap/send"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/edit_text"
+            android:layout_marginBottom="18dp"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+</LinearLayout>

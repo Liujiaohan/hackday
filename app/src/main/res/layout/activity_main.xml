@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context="com.hackday.anonymousmeet.Activity.MainActivity">
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:background="@mipmap/icon_home"
+        android:id="@+id/home"/>
+
+    <com.google.vr.sdk.widgets.pano.VrPanoramaView
+        android:id="@+id/vr_pan_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.hackday.anonymousmeet.Entity.Animal
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/animation1"
+            android:id="@+id/major_character"/>
+
+    </com.google.vr.sdk.widgets.pano.VrPanoramaView>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/animation2"
+        android:id="@+id/recommend_fish" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/icon_plus"
+        android:id="@+id/add_saying_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>

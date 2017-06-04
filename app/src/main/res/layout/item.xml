@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/item_saying_content"
+        tools:text="很快就会看见啊很快就的发挥空间和恐惧感很少看见风华高科
+        就是靠感觉还是恐惧和刚开始看感觉翻开手机关机克莱斯勒恐惧感"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_toLeftOf="@+id/item_likeamount"
+        android:layout_alignBottom="@+id/item_likeamount"
+        android:layout_marginRight="30dp"
+        android:background="@mipmap/star"/>
+
+    <TextView
+        android:layout_below="@+id/item_saying_content"
+        android:id="@+id/item_likeamount"
+        tools:text="123"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

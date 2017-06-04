@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hackday.anonymousmeet.Activity.Main2Activity">
+    <com.google.vr.sdk.widgets.pano.VrPanoramaView
+        android:id="@+id/vr_pan_view2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent">
+
+        <com.hackday.anonymousmeet.Entity.Animal
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/animation1"
+            android:id="@+id/major_character2"/>
+    </com.google.vr.sdk.widgets.pano.VrPanoramaView>
+</RelativeLayout>
